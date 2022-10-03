@@ -10,6 +10,13 @@ pip install streamlit-highcharts
 
 ## Usage instructions
 
+For chart definition, please refer to https://www.highcharts.com/demo
+You'll find a lot of samples, just coipy the JS definition as JSON and think about the following:
+- Convert in pure JSON, all keys must be in double quote.
+- Replace boolean value true or false by Python correct values True or False
+- Double quote "null" values
+- Remove any JS functions
+
 ```python
 import streamlit as st
 
@@ -49,4 +56,5 @@ chart_def={
     ]
 }
 value = streamlit_highcharts(chart_def,640) #640 is the chart height
+
 
