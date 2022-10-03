@@ -12,10 +12,15 @@ pip install streamlit-highcharts
 
 For chart definition, please refer to https://www.highcharts.com/demo
 You'll find a lot of samples, just coipy the JS definition as JSON and think about the following:
-- Convert in pure JSON, all keys must be in double quote.
-- Replace boolean value true or false by Python correct values True or False
+- Convert in pure JSON, all keys must be in double quote, you can use https://jsonformatter.curiousconcept.com/#
+- Replace boolean values true or false by Python correct values True or False
 - Double quote "null" values
 - Remove any JS functions
+- Make data dynamic :-)
+
+## Sample Streamlit Application
+
+https://aalteirac-streamlit-highcharts-test-app-main-3vgde6.streamlitapp.com/
 
 ```python
 import streamlit as st
