@@ -26,8 +26,7 @@ https://aalteirac-streamlit-highcharts-test-app-main-3vgde6.streamlitapp.com/
 
 ```python
 import streamlit as st
-
-from streamlit_highcharts import streamlit_highcharts
+import streamlit_highcharts as hct
 
 chart_def={
    "title":{
@@ -62,6 +61,9 @@ chart_def={
         }
     ]
 }
-value = streamlit_highcharts(chart_def,640) #640 is the chart height
+
+hct.streamlit_highcharts(chart_def,640) #640 is the chart height
+#The component bundles some sample chart definitions, from SAMPLE1 to ...SAMPLE10
+hct.streamlit_highcharts(hct.SAMPLE1,640) #640 is the chart height
 
 
